@@ -21,7 +21,7 @@ class BukuController extends Controller
                 });
             })
             ->latest()
-            ->paginate(6)
+            ->paginate(5)
             ->withQueryString();
 
         return view('buku.index', compact('daftarBuku', 'cari'));
